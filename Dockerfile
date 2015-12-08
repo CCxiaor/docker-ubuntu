@@ -13,5 +13,6 @@ RUN sed -ri 's/UsePAM yes/#UsePAM yes/g' /etc/ssh/sshd_config
 
 VOLUME /var/www/volume01
 EXPOSE 22
+EXPOSE 80
 
 CMD    ["/usr/sbin/sshd", "-D"]
